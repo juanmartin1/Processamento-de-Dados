@@ -1,0 +1,13 @@
+﻿1- Inclue a biblioteca de entrada e saida com o comando "#include <stdio.h>".
+
+2- Define a função "int main()", que retorna um numero inteiro, e abre o bloco de execução com a chave "{".
+
+3- Define a variavel inteira "x" na memoria com o comando "int x;".
+
+4- Com o comando "scanf("%d", x);" ele lê um valor inteiro do teclado o qual é atribuido à variavel "x".
+
+5- Com a função "printf("%d", x);" ele imprime o valor, armazenado na variavel "x", na tela.
+
+6- Depos ele retorna o valor 0 em "return(0);".
+
+7- E por fim ele fecha o bloco de execução da função main com a chave "}".
