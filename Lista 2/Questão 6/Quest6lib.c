@@ -8,10 +8,9 @@ int par_impar(int a){
 	return 0;
 }
 
-int main(){
+void principal(){
 	int n;
 	printf("Digite o numero\n");
 	scanf("%d", &n);
 	par_impar(n);
-	return 0;
 }

@@ -13,10 +13,9 @@ int maior(float a, float b){
 	return 0;
 }
 
-int main(){
+void principal(){
 	float n1, n2;
 	printf("Digite os dois numeros\n");
 	scanf("%f %f", &n1, &n2);
 	maior(n1,n2);
-	return 0;
 }

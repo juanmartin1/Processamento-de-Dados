@@ -12,11 +12,10 @@ char conceito(float m){
 	return 'A';
 }
 
-int main(){
+void principal(){
 	float n1, n2, n3, m;
 	printf("Digite as tres notas do aluno");	
 	scanf("%f %f %f", &n1, &n2, &n3);
 	m = med_p(n1,n2,n3);
 	printf("A media foi: %f\nO conceito foi %c", m, conceito(m));
-	return 0;
 }

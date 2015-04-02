@@ -59,7 +59,7 @@ int imprime(float *n, int e){
 	}
 }
 
-int main(){
+void principal(){
 	float n[3], e = 3;
 	int I;
 	printf("Digite os valores de I, A, B, C respectivamente\n");
@@ -76,5 +76,4 @@ int main(){
 		meio(n);
 	}
 	imprime(n, e);
-	return 0;
 }
