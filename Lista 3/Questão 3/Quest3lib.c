@@ -1,10 +1,10 @@
 #include<stdio.h>
 
-void imprime(int* F, int n){
-	int i = 0;
-	for (i=0 ; i < n ; i++){
-		if(i < n-1 )printf("%d - ", F[i]);
-		else printf("%d", F[i]);
+void imprime(int* F, int i){
+	int e = 0;
+	for (e=0 ; e < i ; e++){
+		if(e < i-1)printf("%d - ", F[e]);
+		else printf("%d", F[e]);
 	}
 }
 
@@ -14,16 +14,13 @@ void fibo(int n){
 	F[1] = 1;
 	printf("Fibonacci: ", F[0]);
 	if (n == 0){
-		printf("%d", F[0]);
-	}
-	else if (n == 1){
 		printf("%d, %d", F[0], F[1]);
 	}
-	else if (n > 1){
-		for (i=0 ; i <= n - 2 ; i++){
-			F[i+2] = F[i] + F[i+1];
+	else if (n > 0){
+		for (i=2 ; F[i-1] <= n ; i++){
+			F[i] = F[i-1] + F[i-2];
 		}
-		imprime(F, n);
+		imprime(F, i);
 	}
 }
 
