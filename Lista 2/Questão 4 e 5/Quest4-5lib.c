@@ -53,14 +53,14 @@ int imprime(float *n, int e){
 }
 
 void principal(){
-	int c;
+	int o;
 	float n[10], e;
 	e = sizeof(n)/4;
 	printf("Para ordenar em ordem crescente digite 1, para ordem decrescente digite 2\n");
-	scanf("%d", &c);
+	scanf("%d", &o);
 	printf("Digite os tres numeros\n");
 	ler(n, e);
-	if(c == 1) crescente(n,e);
-	else if(c == 2) decrescente(n,e);
+	if(o == 1) crescente(n,e);
+	else if(o == 2) decrescente(n,e);
 	imprime(n, e);
 }
