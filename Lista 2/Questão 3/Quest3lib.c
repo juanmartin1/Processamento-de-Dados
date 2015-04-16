@@ -7,7 +7,7 @@ int maior(float a, float b){
 	else if(b == a){
 		printf("Os dois numeros sao iguais a %.2f", a);
 	}
-	else{
+	else if(b < a){
 		printf("O maior numero e %.2f", a);
 	}
 	return 0;
