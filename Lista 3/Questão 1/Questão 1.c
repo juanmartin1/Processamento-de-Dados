@@ -1,6 +1,6 @@
 #include "Quest1lib.c"
 
 int main(){
-	
-	return principal();
+	principal();
+	return 0;
 }
