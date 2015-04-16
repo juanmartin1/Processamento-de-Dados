@@ -1,20 +1,16 @@
 #include "Quest1lib.h"
 
-int maior(int n, int M) {
-	if(n > M) return n;
+float principal(){
+	float a = 0;
+	printf("O maior numero digitado foi %f", maior(a));
 }
 
-int menor(int n, int m) {
-	if(n < m) return n;
-}
 
-void principal(){
-	int n = 0, m = 99999, M = -99999;
-	scanf("%d", &n);
-	while(n >= 0){
-		if(n > M) M = n;
-		if(n < m) m = n;
-		scanf("%d", &n);
+float maior(float a){
+	float M = -99999;
+	while(a >= 0){
+		scanf("%f", &a);
+		if (a > M) M = a;
 	}
-	printf("O maior numero digitado foi %d\nO menor numero digitado foi: %d", M, m);
+	return M;
 }

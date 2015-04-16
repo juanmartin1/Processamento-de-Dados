@@ -3,13 +3,10 @@
 
 #include <stdio.h>
 
-//seleção do maior numero.
-int maior(int n, int M);
-
-//seleção do menor numero.
-int menor(int n, int M);
+//Bloco de repetição, e seleção do maior numero.
+float maior(float a);
 
 // Função principal.
-void principal();
+float principal();
 
 #endif

@@ -1,16 +1,26 @@
 #include<stdio.h>
 
+void imprime(int* F, int i){
+	int e = 0;
+	for (e=0 ; e < i ; e++){
+		if(e < i-1)printf("%d - ", F[e]);
+		else printf("%d", F[e]);
+	}
+}
+
 void fibo(int n){
-	long int f = 1, a = 0, b = 1, i = 2;
-	printf("Fibonacci: ");
-	if (n > 0){
-		printf("%d - %d", a, b);
-		for (i=0 ; f <= n ; i++){
-			f = a + b;
-			a = b;
-			b = f;
-			printf(" - %d", f);
+	int F[n + 1], i = 2;
+	F[0] = 0;
+	F[1] = 1;
+	printf("Fibonacci: ", F[0]);
+	if (n == 0){
+		printf("%d, %d", F[0], F[1]);
+	}
+	else if (n > 0){
+		for (i=2 ; F[i-1] <= n ; i++){
+			F[i] = F[i-1] + F[i-2];
 		}
+		imprime(F, i);
 	}
 }
 
