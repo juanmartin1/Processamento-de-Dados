@@ -35,7 +35,7 @@ void printmatrix(int *M){
 }
 
 void principal(){
-	int M[10][10];
-	scanmatrix(M);
-	printmatrix(M);
+	int M[3][3];
+	scanmatrix((int*)M);
+	printmatrix((int*)M);
 }
